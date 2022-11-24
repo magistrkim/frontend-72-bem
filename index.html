@@ -22,31 +22,31 @@
 	</head>
 	<body>
 		<header class="header" data-header>
-			<div class="header-container container">
-				<a href="" class="logo">
-					<svg class="header-logo" width="68px" height="56px">
+			<div class="header__container container">
+				<a href="" class="logo header__logo">
+					<svg class="logo__img" width="68px" height="56px">
 						<use href="./img/sprite.svg#icon-Logo"></use>
 					</svg>
 				</a>
-				<nav class="header-nav">
-					<ul class="nav-list list">
-						<li class="nav-item">
-							<a href="#about" class="header-nav-link nav-link link">About</a>
+				<nav class="nav">
+					<ul class="nav__list list">
+						<li class="nav__item">
+							<a href="#about" class="nav__link nav__link--current link">About</a>
 						</li>
-						<li class="nav-item">
-							<a href="#price" class="header-nav-link nav-link link">Services and prices</a>
+						<li class="nav__item">
+							<a href="#price" class="nav__link link">Services and prices</a>
 						</li>
-						<li class="nav-item">
-							<a href="#team" class="header-nav-link nav-link link">Barbers</a>
+						<li class="nav__item">
+							<a href="#team" class="nav__link link">Barbers</a>
 						</li>
-						<li class="nav-item">
-							<a href="#contacts" class="header-nav-link nav-link link">Contacts</a>
+						<li class="nav__item">
+							<a href="#contacts" class="nav__link link">Contacts</a>
 						</li>
 					</ul>
 				</nav>
-				<div class="header-address">
-					<a href="tel:+380441111111" class="nav-link link">+38 044 111 11 11</a>
-					<button type="button" class="header-dark-btn button" data-modal-open>
+				<div class="header__group">
+					<a href="tel:+380441111111" class="header__contact nav__link link">+38 044 111 11 11</a>
+					<button type="button" class="btn--theme-dark button" data-modal-open>
 						Online-booking
 					</button>
 				</div>
@@ -80,9 +80,9 @@
 						</ul>
 					</div>
 					<div class="hero-right-side">
-						<p class="uppertitle uppertitle-theme-dark hero-text">A hair salon for men in Kyiv</p>
+						<p class="uppertitle hero-text">A hair salon for men in Kyiv</p>
 						<h1 class="hero-title">BarberShop</h1>
-						<p class="hero-descriprion">
+						<p class="hero-description undertitle">
 							We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
 						</p>
 						<ul class="slider-pagination list">
@@ -112,9 +112,9 @@
 						</li>
 					</ul>
 					<div class="about-right-side">
-						<h2 class="about-title uppertitle">About</h2>
-						<h3 class="about-sub-title">Best Barbershop in your city</h3>
-						<p class="about-description">
+						<h2 class="uppertitle uppertitle--dark-theme">About</h2>
+						<h3 class="about-sub-title title title--dark-theme">Best Barbershop in your city</h3>
+						<p class="about-description undertitle undertitle--dark-theme">
 							If you want to add more confidence to your image, you should definitely visit us.
 						</p>
 						<p class="about-text">
@@ -123,55 +123,53 @@
 							are a team that is always "on the same wave" with clients. Therefore, we are always
 							ready to improve everyone who comes to us
 						</p>
-						<button type="button" class="about-light-btn button">Online-booking</button>
+						<button type="button" class="btn--light-theme button">Online-booking</button>
 					</div>
 				</div>
 			</section>
 			<section class="section price-section" id="price">
 				<div class="container">
-					<p class="price-description uppertitle uppertitle-theme-dark">
-						Spend your time with the best masters
-					</p>
+					<p class="price-description uppertitle">Spend your time with the best masters</p>
 					<h2 class="price-title title">Services and prices</h2>
 					<div class="price-block">
 						<ul class="price-list list">
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Men’s haircut</span>
 								from 300 uah.
 							</li>
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Beard trim</span>
 								from 300 uah.
 							</li>
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Mustache trim</span>
 								from 200 uah.
 							</li>
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Straight razor shave</span>
 								from 200 uah.
 							</li>
 						</ul>
 						<ul class="price-list list">
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Trainee’s haircut</span>
 								from 50 uah.
 							</li>
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Haircut under the nozzle</span>
 								from 200 uah.
 							</li>
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Children’s haircut (0-12 y.o.)</span>
 								from 300 uah.
 							</li>
-							<li class="price-list-item">
+							<li class="price-list-item undertitle">
 								<span class="price-item-service">Camouflage of gray hair</span>
 								from 200 uah.
 							</li>
 						</ul>
 					</div>
-					<button type="button" class="button-price header-dark-btn button">Online-booking</button>
+					<button type="button" class="button-price btn--theme-dark button">Online-booking</button>
 				</div>
 			</section>
 			<section class="benefits-section section">
@@ -197,9 +195,11 @@
 						</ul>
 					</div>
 					<div class="benefits-right-side">
-						<p class="benefits-description uppertitle">Old traditional school</p>
-						<h2 class="benefits-title title">¿Why people come to us?</h2>
-						<p class="benefits-text">
+						<p class="benefits-description uppertitle uppertitle--dark-theme">
+							Old traditional school
+						</p>
+						<h2 class="benefits-title title title--dark-theme">¿Why people come to us?</h2>
+						<p class="undertitle undertitle--dark-theme">
 							Only good things are said about us. But it's better to see and feel 1 time than read
 							10 times.
 						</p>
@@ -208,10 +208,12 @@
 			</section>
 			<section class="team-section section" id="team">
 				<div class="container">
-					<p class="team-description uppertitle">For true enjoyers of the atmosphere</p>
-					<h2 class="team-title title">Our barbers</h2>
+					<p class="uppertitle uppertitle--dark-theme">
+						For true enjoyers of the atmosphere
+					</p>
+					<h2 class="team-title title title--dark-theme">Our barbers</h2>
 					<ul class="team-list card-set list">
-						<li class="card-set-item team-item">
+						<li class="card-set__item team-item">
 							<img
 								src="./img/our-barbers-img1.jpg"
 								alt="barbers make haircut"
@@ -277,7 +279,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="card-set-item team-item">
+						<li class="card-set__item team-item">
 							<img
 								src="./img/our-barbers-img2.jpg"
 								alt="barbers make haircut"
@@ -343,7 +345,7 @@
 								</ul>
 							</div>
 						</li>
-						<li class="card-set-item team-item">
+						<li class="card-set__item team-item">
 							<img
 								src="./img/our-barbers-img3.jpg"
 								alt="barbers make haircut"
@@ -414,19 +416,21 @@
 			</section>
 			<section class="gallery-section section">
 				<div class="container">
-					<p class="gallery-description uppertitle">In Latin, "barba" means "beard"</p>
+					<p class="uppertitle uppertitle--dark-theme">
+						In Latin, "barba" means "beard"
+					</p>
 					<h2 class="visually-hidden">Gallery</h2>
 					<ul class="card-set gallery-list list">
-						<li class="card-set-item gallery-item">
+						<li class="card-set__item gallery-item">
 							<img src="./img/our-works-img1.jpg" alt="barbers works" width="270" height="360" />
 						</li>
-						<li class="card-set-item gallery-item">
+						<li class="card-set__item gallery-item">
 							<img src="./img/our-works-img2.jpg" alt="barbers works" width="270" height="360" />
 						</li>
-						<li class="card-set-item gallery-item">
+						<li class="card-set__item gallery-item">
 							<img src="./img/our-works-img3.jpg" alt="barbers works" width="270" height="360" />
 						</li>
-						<li class="card-set-item gallery-item">
+						<li class="card-set__item gallery-item">
 							<img src="./img/our-works-img4.jpg" alt="barbers works" width="270" height="360" />
 						</li>
 					</ul>
@@ -435,7 +439,7 @@
 			<div class="contact-group" id="contacts">
 				<div class="container contacts-container">
 					<section class="booking-section section">
-						<h2 class="booking-title">Online-booking</h2>
+						<h2 class="booking-title title">Online-booking</h2>
 						<form name="booking_form" class="booking-form">
 							<div class="booking-group">
 								<label class="booking-group-field">
@@ -468,12 +472,12 @@
 								></textarea>
 								<span class="booking-label">Message</span>
 							</label>
-							<button class="button-price header-dark-btn button" type="submit">Send</button>
+							<button class="button-price btn--theme-dark button" type="submit">Send</button>
 						</form>
 					</section>
 					<section class="address-section section">
 						<div class="address-wrapper">
-							<h2 class="address-title">Contacts</h2>
+							<h2 class="address-title title">Contacts</h2>
 							<address class="address-container">
 								<a
 									class="address-link link"
@@ -504,7 +508,7 @@
 								</a>
 							</address>
 						</div>
-						<h3 class="schedule-sub-title uppertitle uppertitle-theme-dark">Working hours</h3>
+						<h3 class="schedule-sub-title uppertitle uppertitle--white-theme">Working hours</h3>
 						<p class="schedule-text">Every day from 9:00 to 22:00</p>
 					</section>
 				</div>
@@ -590,7 +594,7 @@
 							<a class="modal-form-agreement-link" href="">Terms and Conditions</a>
 						</label>
 					</div>
-					<button class="modal-form-btn about-light-btn button" type="submit">Send</button>
+					<button class="modal-form-btn btn--light-theme button" type="submit">Send</button>
 				</form>
 			</div>
 		</div>
