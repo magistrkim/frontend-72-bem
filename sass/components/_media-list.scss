@@ -1,0 +1,13 @@
+.media-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    &::before {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 1px;
+        background-color: var(--secondary-title-color);
+    }
+}

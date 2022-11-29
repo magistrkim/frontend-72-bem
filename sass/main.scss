@@ -1,0 +1,37 @@
+/*Utils*/
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+/*Base*/
+@import "./base/reset";
+@import "./base/base";
+@import "./base/card-set";
+@import "./base/animation";
+
+
+/*Components*/
+@import "./components/fonts";
+@import "./components/container";
+@import "./components/section";
+@import "./components/typography";
+@import "./components/button";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/nav";
+@import "./components/header-contacts";
+@import "./components/hero";
+@import "./components/media-list";
+@import "./components/slider";
+@import "./components/about";
+@import "./components/price";
+@import "./components/benefits";
+@import "./components/team";
+@import "./components/socials";
+@import "./components/gallery";
+@import "./components/contacts";
+@import "./components/booking";
+@import "./components/address";
+@import "./components/footer";
+@import "./components/backdrop";
+@import "./components/modal";

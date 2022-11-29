@@ -1,0 +1,10 @@
+.header__logo{
+    margin-right: 132px;
+}
+.logo__img {
+    fill: #303030;
+    @include transition(fill);
+}
+.header--no-transparency .logo__img {
+    fill: var(--main-title-color);
+}

@@ -1,0 +1,29 @@
+.about {
+    @extend %section;
+}
+.about-container {
+    display: flex;
+}
+.about-list {
+    display: flex;
+    margin-right: 30px;
+}
+.about-item:not(:last-child) {
+    margin-right: 30px;
+}
+.about-right-side {
+    width: 470px;
+}
+.about-sub-title {
+    margin-bottom: 20px;
+}
+.about-description {
+    margin-bottom: 20px;
+}
+.about-text {
+    font-size: 14px;
+    line-height: 1.85;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-bottom: 42px;
+}

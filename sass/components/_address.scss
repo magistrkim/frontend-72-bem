@@ -1,0 +1,42 @@
+.address {
+    @extend %section;
+    width: 570px;
+    padding-left: 100px;
+}
+.address-title {
+    margin-bottom: 40px;
+}
+.address-wrapper {
+    margin-bottom: 70px;
+}
+.address-container {
+    margin-bottom: 70px;
+}
+.address-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.66;   
+    letter-spacing: 0.02em;
+    color:  var(--secondary-text-color);
+    margin-bottom: 20px;
+}
+.address-tel, 
+.address-mail,
+.schedule-text {
+    font-size: 18px;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+.address-tel {
+    margin-bottom: 20px;
+}
+.address-tel, 
+.address-mail {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}

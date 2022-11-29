@@ -1,0 +1,50 @@
+.nav {
+    margin-right: auto;
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.nav__link {
+    position: relative;
+    display: block;
+    padding-top: 52px;
+    padding-bottom: 52px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: var(--main-title-color);
+
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+}
+
+    &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translateX(-50%) scale(0.3);
+    display: block;
+    width: 90%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    opacity: 0;
+
+    @include transition(transform, opacity);
+}
+
+    &:hover::after,
+    &:focus::after  {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+}
+}
+
+

@@ -1,0 +1,9 @@
+.gallery {
+    @extend %section;
+}
+.gallery-description {
+    margin-bottom: 45px;
+}
+.gallery-list {
+    --items: 4;
+}

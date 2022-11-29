@@ -1,0 +1,27 @@
+.team {
+    @extend %section;
+    background-color: var(--section-secondary-bcg-color);
+}
+.team-title {
+    margin-bottom: 44px;
+}
+.team-sub-title {
+    font-size: 18px;
+    line-height: 1.38;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color:  var(--secondary-title-color);
+    margin-bottom: 8px;
+}
+.team-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.team-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+}
