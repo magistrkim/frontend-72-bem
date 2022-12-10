@@ -8,6 +8,10 @@
     background-color: rgba(59, 59, 59, 0.5);
     backdrop-filter: blur(2px);
     transition: opacity 250ms linear, visibility 250ms linear;
+
+    @media screen and (max-width: 767.98px) {
+        overflow: scroll;
+    }
 }
 .backdrop.is-hidden {
     opacity: 0;

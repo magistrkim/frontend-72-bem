@@ -1,16 +1,35 @@
 .address {
     @extend %section;
-    width: 570px;
-    padding-left: 100px;
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+        padding-left: 100px;
+    }
 }
 .address-title {
     margin-bottom: 40px;
+    
+    @media screen and (max-width: 1199.98px) {
+        text-align: center;
+    }
 }
 .address-wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 44px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 70px;
+    }
 }
 .address-container {
-    margin-bottom: 70px;
+    margin-bottom: 44px;
+
+    @media screen and (max-width: 1199.98px) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 70px;
+    }
 }
 .address-link {
     display: flex;
@@ -22,6 +41,11 @@
     letter-spacing: 0.02em;
     color:  var(--secondary-text-color);
     margin-bottom: 20px;
+
+    
+    @media screen and (max-width: 1199.98px) {
+        justify-content: center;
+    }
 }
 .address-tel, 
 .address-mail,
@@ -39,4 +63,18 @@
     display: flex;
     align-items: center;
     gap: 16px;
+
+    @media screen and (max-width: 1199.98px) {
+        justify-content: center;
+    }
+}
+.schedule-sub-title {
+    @media screen and (max-width: 1199.98px) {
+        justify-content: center;
+    }
+}
+.schedule-text {
+    @media screen and (max-width: 1199.98px) {
+        text-align: center;
+    }
 }

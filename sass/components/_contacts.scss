@@ -1,12 +1,27 @@
 .contact-group {
-    max-width: 1600px;
-    margin: 0 auto;
-    background-color: var(--secondary-background-color);
-    background-image: url(../img/contacts-bg.png);
-    background-repeat: no-repeat;
-    background-position: left calc(50% + 408px) top 50%;
+    @media screen and (min-width: 480px) {
+        margin: 0 auto;
+        background-color: var(--secondary-background-color);
+        background-image: url(../img/contacts-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top calc(50% + 538px) left 50%;
+    }
+    @media screen and (min-width: 768px) {
+        background-position: top calc(50% + 518px) left 50%;
+    }
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        margin: 0 auto;
+        background-color: var(--secondary-background-color);
+        background-image: url(../img/contacts-bg.png);
+        background-repeat: no-repeat;
+        background-position: left calc(50% + 730px) top 50%;
+    }
 }
 .contacts-container {
-    display: flex;
-    justify-content: space-between;
+     @media screen and (min-width: 1200px) {
+        display: flex;
+        justify-content: space-between;
+    }
 }

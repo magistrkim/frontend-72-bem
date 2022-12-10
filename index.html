@@ -11,7 +11,7 @@
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./fonts/">
+		<link rel="stylesheet" href="./fonts/" />
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -47,11 +47,14 @@
 					</ul>
 				</nav>
 				<div class="header__group">
-					<a href="tel:+380441111111" class="header__contact nav__link link">+38 044 111 11 11</a>
-					<button type="button" class="btn--theme-dark" data-modal-open>
-						Online-booking
-					</button>
+					<a href="tel:+380441111111" class="header__contact link">+38 044 111 11 11</a>
+					<button type="button" class="btn--theme-dark" data-modal-open>Online-booking</button>
 				</div>
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg class="menu-icon" width="40px" height="40px">
+						<use href="./img/sprite.svg#icon-menu"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 		<main>
@@ -61,7 +64,7 @@
 						<ul class="hero-list media-list list">
 							<li class="hero-list-item">
 								<a
-									href=""
+									href="https://instagram.com"
 									target="_blank"
 									class="hero-link link"
 									rel="noopener norefferer nofollow"
@@ -71,7 +74,7 @@
 							</li>
 							<li class="hero-list-item">
 								<a
-									href=""
+									href="https://youtube.com"
 									target="_blank"
 									class="hero-link link"
 									rel="noopener norefferer nofollow"
@@ -115,7 +118,7 @@
 					</ul>
 					<div class="about-right-side">
 						<h2 class="uppertitle uppertitle--dark-theme">About</h2>
-						<h3 class="about-sub-title title title--dark-theme">Best Barbershop in your city</h3>
+						<h3 class="about-sub-title title--dark-theme">Best Barbershop in your city</h3>
 						<p class="about-description undertitle undertitle--dark-theme">
 							If you want to add more confidence to your image, you should definitely visit us.
 						</p>
@@ -123,7 +126,7 @@
 							We are a team that never stops at what has been achieved and are thirsty for changes.
 							And when you fall into the hands of our master, you will never be the same again. We
 							are a team that is always "on the same wave" with clients. Therefore, we are always
-							ready to improve everyone who comes to us
+							ready to improve everyone who comes to us!
 						</p>
 						<button type="button" class="btn--light-theme">Online-booking</button>
 					</div>
@@ -210,16 +213,14 @@
 			</section>
 			<section class="team" id="team">
 				<div class="container">
-					<p class="uppertitle uppertitle--dark-theme">
-						For true enjoyers of the atmosphere
-					</p>
+					<p class="uppertitle uppertitle--dark-theme">For true enjoyers of the atmosphere</p>
 					<h2 class="team-title title title--dark-theme">Our barbers</h2>
 					<ul class="team-list card-set list">
 						<li class="card-set__item team-item">
 							<img
 								src="./img/our-barbers-img1.jpg"
 								alt="barbers make haircut"
-								width="370"
+								width="418"
 								height="346"
 							/>
 							<div class="team-wrapper">
@@ -285,7 +286,7 @@
 							<img
 								src="./img/our-barbers-img2.jpg"
 								alt="barbers make haircut"
-								width="370"
+								width="418"
 								height="346"
 							/>
 							<div class="team-wrapper">
@@ -351,7 +352,7 @@
 							<img
 								src="./img/our-barbers-img3.jpg"
 								alt="barbers make haircut"
-								width="370"
+								width="418"
 								height="346"
 							/>
 							<div class="team-wrapper">
@@ -418,9 +419,7 @@
 			</section>
 			<section class="gallery">
 				<div class="container">
-					<p class="uppertitle uppertitle--dark-theme">
-						In Latin, "barba" means "beard"
-					</p>
+					<p class="uppertitle gallery-uppertitle uppertitle--dark-theme">In Latin, "barba" means "beard"</p>
 					<h2 class="visually-hidden">Gallery</h2>
 					<ul class="card-set gallery-list list">
 						<li class="card-set__item gallery-item">
@@ -474,7 +473,7 @@
 								></textarea>
 								<span class="booking-label">Message</span>
 							</label>
-							<button class="button-price btn--theme-dark button" type="submit">Send</button>
+							<button class="booking-button btn--theme-dark button" type="submit">Send</button>
 						</form>
 					</section>
 					<section class="address">
@@ -510,8 +509,10 @@
 								</a>
 							</address>
 						</div>
-						<h3 class="schedule-sub-title uppertitle uppertitle--white-theme">Working hours</h3>
-						<p class="schedule-text">Every day from 9:00 to 22:00</p>
+						<div class="schedule-wrapper">
+							<h3 class="schedule-sub-title uppertitle uppertitle--white-theme">Working hours</h3>
+							<p class="schedule-text">Every day from 9:00 to 22:00</p>
+						</div>	
 					</section>
 				</div>
 			</div>
@@ -521,7 +522,12 @@
 				<p class="footer-copyright">&#169; Copyright 2020</p>
 				<ul class="footer-list list">
 					<li class="footer-item instagram-link">
-						<a href="" target="_blank" rel="noopener norefferer nofollow" class="footer-link link">
+						<a
+							href="https://www.instagram.com/"
+							target="_blank"
+							rel="noopener norefferer nofollow"
+							class="footer-link link"
+						>
 							Instagram
 						</a>
 					</li>
@@ -600,6 +606,56 @@
 				</form>
 			</div>
 		</div>
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg class="mobile-menu-icon" width="24px" height="24px">
+					<use href="./img/sprite.svg#icon-close-cross"></use>
+				</svg>
+			</button>
+			<ul class="mobile-menu">
+				<li class="mobile-menu-item"><a href="#about" class="mobile-menu-link link current">About</a></li>
+				<li class="mobile-menu-item">
+					<a href="#price" class="mobile-menu-link link">Services and prices</a>
+				</li>
+				<li class="mobile-menu-item"><a href="#team" class="mobile-menu-link link">Barbers</a></li>
+				<li class="mobile-menu-item">
+					<a href="#contacts" class="mobile-menu-link link">Contacts</a>
+				</li>
+			</ul>
+			<div class="mobile-contacts-group">
+				<a href="tel:+380441111111" class="mobile-contacts-link link">+38 044 111 11 11</a>
+				<button type="button" class="mobile-menu-btn btn--light-theme" data-modal-open>Online-booking</button>
+			</div>
+			<ul class="mobile-socials list">
+				<li class="mobile-socials-item instagram-link">
+					<a
+						href="https://instagram.com"
+						target="_blank"
+						rel="noopener norefferer nofollow"
+						class="mobile-socials-link link"
+					>
+						Instagram
+					</a>
+				</li>
+				<li class="mobile-socials-item instagram-link">
+					<a
+						href="https://youtube.com"
+						target="_blank"
+						rel="noopener norefferer nofollow"
+						class="mobile-socials-link link"
+					>
+						Youtube
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="js/mobile-menu.js"></script>
 		<script src="./js/header-scroll.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>

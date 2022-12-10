@@ -1,16 +1,17 @@
 .header__contact {
-    position: relative;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding-top: 52px;
-    padding-bottom: 52px;
+    display: block;
+    padding: 52px 0;
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: var(--main-title-color);
     
+    @media screen and (max-width: 1199px) {
+        display: none;
+      }
+
     @include transition(color);
 
     &:hover, 

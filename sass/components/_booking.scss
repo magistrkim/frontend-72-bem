@@ -1,32 +1,60 @@
 .booking {
     @extend %section;
-    width: 570px;
+
+    @media screen and (min-width: 1200px) {
+        width: 570px;
+    }
 }
 .booking-title {
     margin-bottom: 40px;
+
+    @media screen and (max-width: 1199.98px) {
+        text-align: center;
+    }
 }
 .booking-group {
     position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    gap: 44px;
     margin-bottom: 44px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
 }
 .booking-group-field {
-    flex-basis: 270px;
     position: relative;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+        flex-basis: 330px;
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: 270px;
+    }
 }
 .booking-group-field:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (min-width: 768px) {
+        margin-right: 30px;
+    }
 }
 .booking-field,
 .booking-message {
-    width: 100%;
+    width: 418px;
     height: 24px;
     color: var(--main-title-color);
     outline: unset;
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+    @media screen and (min-width: 768px) {
+        width: 100%;
+    }
     
     @include transition(border-color);
 }
@@ -83,4 +111,14 @@
 .booking-message {
     height: 76px;
     resize: none;
+}
+.booking-button {
+    @media screen and (max-width: 1199.98px) {
+        display: block;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 768px) {
+    margin-right: auto;
+    }
 }

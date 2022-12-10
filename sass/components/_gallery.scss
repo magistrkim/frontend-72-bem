@@ -1,9 +1,20 @@
 .gallery {
     @extend %section;
 }
-.gallery-description {
-    margin-bottom: 45px;
+.gallery-uppertitle {
+    margin-bottom: 70px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 44px;
+    }
 }
 .gallery-list {
-    --items: 4;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (min-width: 768px) {
+        --items: 4;
+    }
+
 }

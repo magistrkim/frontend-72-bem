@@ -1,8 +1,17 @@
 .card-set {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    gap: var(--indent);
+ 
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        gap: var(--indent);
+    }
 }
 .card-set__item {
-    flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+    }
 }

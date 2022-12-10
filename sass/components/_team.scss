@@ -13,9 +13,16 @@
     color:  var(--secondary-title-color);
     margin-bottom: 8px;
 }
+.team-list {
+    @media screen and (max-width: 1199.98px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 64px;
+    }
+}
 .team-wrapper {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 .team-text {
     font-size: 14px;

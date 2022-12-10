@@ -1,9 +1,11 @@
-.header__logo{
-    margin-right: 132px;
-}
-.logo__img {
-    fill: #303030;
+
+.logo__img { 
+    fill: #ffffff;
     @include transition(fill);
+
+    @media screen and (min-width: 768px) {
+        fill: #303030;
+    }
 }
 .header--no-transparency .logo__img {
     fill: var(--main-title-color);
