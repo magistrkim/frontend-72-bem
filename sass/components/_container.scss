@@ -4,6 +4,9 @@
     margin-right: auto;
     margin-left: auto;
 
+    @media screen and (min-width: 420px) {
+        width: 420px;
+    }
     @media screen and (min-width: 480px) {
         width: 448px;
     }

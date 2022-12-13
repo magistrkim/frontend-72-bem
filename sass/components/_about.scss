@@ -12,9 +12,19 @@
     @media screen and (max-width: 767.98px) {
         display: none;
     }   
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 1199.98px) {
         flex-direction: column;
       }  
+}
+.about-item {
+    overflow: hidden;
+  }
+.about-img {
+    transition: transform 1000ms ease;
+  
+.about-item:hover & {
+      transform: scale(1.2);
+    }
 }
 .about-right-side {
     max-width: 330px;
@@ -47,4 +57,12 @@
     letter-spacing: 0.02em;
     color: var(--text-color);
     margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 48px;
+      }
+
+      @media screen and (min-width: 1200px) {
+        margin-bottom: 40px;
+      }
 }
