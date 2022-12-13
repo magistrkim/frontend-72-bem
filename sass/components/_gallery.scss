@@ -9,12 +9,17 @@
     }
 }
 .gallery-list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+
+    --items: 1;
 
     @media screen and (min-width: 768px) {
-        --items: 4;
+        --items: 2;
     }
 
+    @media screen and (min-width: 1200px) {
+        --items: 4;
+    }
 }
+.gallery-item {
+    position: relative;
+  }

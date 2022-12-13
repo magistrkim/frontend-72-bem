@@ -2,21 +2,43 @@
     @media screen and (min-width: 480px) {
         margin: 0 auto;
         background-color: var(--secondary-background-color);
-        background-image: url(../img/contacts-bg.png);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: top calc(50% + 538px) left 50%;
+
+        background-image: url(../img/contacts/img_s1x.png);
+
+        @media (min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) {
+            background-image: url(../img/contacts/img_s2x.png);
+        }
     }
     @media screen and (min-width: 768px) {
-        background-position: top calc(50% + 518px) left 50%;
+        background-image: url(../img/contacts/img_m1x.png);
+
+        @media (min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) {
+            background-image: url(../img/contacts/img_m2x.png);
+        }
+        background-position: top calc(100% + 518px) left 50%;
     }
     @media screen and (min-width: 1200px) {
         max-width: 1600px;
         margin: 0 auto;
         background-color: var(--secondary-background-color);
-        background-image: url(../img/contacts-bg.png);
         background-repeat: no-repeat;
-        background-position: left calc(50% + 730px) top 50%;
+
+        background-image: url(../img/contacts/img_l1x.png);
+
+        @media (min-device-pixel-ratio: 2), 
+        (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) {
+            background-image: url(../img/contacts/img_l2x.png);
+        }
+
+        background-position: left calc(50% + 610px) top 50%;
     }
 }
 .contacts-container {

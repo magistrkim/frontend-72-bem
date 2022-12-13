@@ -93,31 +93,20 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  gap: var(--indent);
 }
 @media screen and (min-width: 1200px) {
   .card-set {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    gap: var(--indent);
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .card-set__item {
-    -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
-        flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
-  }
+.card-set__item {
+  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
+      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
 }
 
 @-webkit-keyframes top-to-bottom {
@@ -664,8 +653,14 @@ body {
     background-color: rgba(25, 28, 38, 0.2);
     background-size: cover;
     background-position: center;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero-slider-img.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero-slider-img.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero/img_s1x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero/img_s1x.jpg);
+  }
+}
+@media screen and (max-width: 767.98px) and (min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.98px) and (min-resolution: 192dpi), screen and (max-width: 767.98px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero/img_s2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero/img_s2x.jpg);
   }
 }
 
@@ -707,17 +702,30 @@ body {
     padding-top: 272px;
     padding-bottom: 208px;
     padding-left: 120px;
-    background: rgba(25, 28, 38, 0.2);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../img/hero-slider-img.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-slider-img.jpg);
     background-size: cover;
     background-position: center;
+    background: rgba(25, 28, 38, 0.2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero/img_m1x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero/img_m1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero/img_m2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero/img_m2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-right-side {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../../img/hero-slider-img.jpg);
-    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../../img/hero-slider-img.jpg);
+    background: rgba(25, 28, 38, 0.2);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero/img_l1x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero/img_l1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-right-side {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(25, 28, 38, 0.2)), to(rgba(25, 28, 38, 0.2))), url(../img/hero/img_l2x.jpg);
+    background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)), url(../img/hero/img_l2x.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -934,10 +942,35 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--secondary-background-color);
-  background-image: url(../img/price-bcground.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../img/price/img_s1x.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .price {
+    background-image: url(../img/price/img_s2x.png);
+  }
+}
+@media screen and (min-width: 481px) {
+  .price {
+    background-image: url(../img/price/img_m1x.png);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(../img/price/img_m2x.png);
+  }
+}
+@media screen and (min-width: 769px) {
+  .price {
+    background-image: url(../img/price/img_l1x.png);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .price {
+    background-image: url(../img/price/img_l2x.png);
+  }
 }
 
 .price-block {
@@ -1233,33 +1266,47 @@ body {
 }
 
 .gallery-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 30px;
+  --items: 1;
 }
 @media screen and (min-width: 768px) {
   .gallery-list {
+    --items: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery-list {
     --items: 4;
   }
+}
+
+.gallery-item {
+  position: relative;
 }
 
 @media screen and (min-width: 480px) {
   .contact-group {
     margin: 0 auto;
     background-color: var(--secondary-background-color);
-    background-image: url(../img/contacts-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top calc(50% + 538px) left 50%;
+    background-image: url(../img/contacts/img_s1x.png);
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .contact-group {
+    background-image: url(../img/contacts/img_s2x.png);
   }
 }
 @media screen and (min-width: 768px) {
   .contact-group {
-    background-position: top calc(50% + 518px) left 50%;
+    background-image: url(../img/contacts/img_m1x.png);
+    background-position: top calc(100% + 518px) left 50%;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .contact-group {
+    background-image: url(../img/contacts/img_m2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1267,9 +1314,14 @@ body {
     max-width: 1600px;
     margin: 0 auto;
     background-color: var(--secondary-background-color);
-    background-image: url(../img/contacts-bg.png);
     background-repeat: no-repeat;
-    background-position: left calc(50% + 730px) top 50%;
+    background-image: url(../img/contacts/img_l1x.png);
+    background-position: left calc(50% + 610px) top 50%;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .contact-group {
+    background-image: url(../img/contacts/img_l2x.png);
   }
 }
 

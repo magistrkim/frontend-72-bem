@@ -1,17 +1,12 @@
 .card-set {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
- 
-
-    @media screen and (min-width: 1200px) {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
         gap: var(--indent);
+    
+    @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
     }
 }
 .card-set__item {
-    @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / (var(--items)));
-    }
 }
