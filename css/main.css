@@ -1230,6 +1230,10 @@ body {
   }
 }
 
+.team-item {
+  position: relative;
+}
+
 .team-wrapper {
   padding-top: 30px;
 }
